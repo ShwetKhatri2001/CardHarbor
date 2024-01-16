@@ -1,0 +1,41 @@
+.react-swipeable-view-container .MuiBox-root {
+  padding: 0 !important;
+}
+
+.button {
+  height: 5px;
+  border-radius: 2px;
+}
+
+.inactive {
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 20px;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 1);
+  width: 40px;
+}
+
+@keyframes rotateVertical {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-90deg);
+  }
+}
+
+.rotate-vertical {
+  animation: rotateVertical 0.2s linear;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+.rotate-vertical::-webkit-scrollbar {
+  display: none;
+}
+
+.react-swipeable-view-container p {
+  overflow: hidden !important;
+}

@@ -1,0 +1,55 @@
+.container {
+  color: green;
+  margin: 10px;
+}
+@keyframes rotateHorizontal {
+  from {
+    transform: rotate(-90deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.rotate-horizontal {
+  animation: rotateHorizontal 0.2s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeAnimation {
+  animation: fadeIn 0.2s ease-in;
+}
+
+@keyframes heightMid {
+  from {
+    height: 25vh;
+  }
+  to {
+    height: 35vh;
+  }
+}
+
+@keyframes heightLarge {
+  from {
+    height: 35vh;
+  }
+  to {
+    height: 85vh;
+  }
+}
+
+.midSize {
+  animation: heightMid 0.1s ease-in;
+}
+
+.largeSize {
+  animation: heightLarge 0.4s ease-in;
+}
