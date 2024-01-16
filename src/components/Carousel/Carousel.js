@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import SwipeableViews from "react-swipeable-views-react-18-fix";
 import { useTheme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
@@ -50,10 +49,6 @@ const Carousel = ({ onClick, back }) => {
 
   const handleChange = (newValue) => {
     setValue(newValue);
-  };
-
-  const handleChangeIndex = (index) => {
-    setValue(index);
   };
 
   return (
